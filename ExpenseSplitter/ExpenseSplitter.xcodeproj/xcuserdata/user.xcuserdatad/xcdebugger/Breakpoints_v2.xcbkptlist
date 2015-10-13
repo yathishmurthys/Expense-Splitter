@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExpenseSplitter/ExpensesManagerTableViewController.swift"
+            timestampString = "463502570.064777"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "ExpensesManagerTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExpenseSplitter.ExpensesManagerTableViewController._fetchedResultsController.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSFetchedResultsController&gt;"
+                  moduleName = "ExpenseSplitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManagerTableViewController.swift"
+                  timestampString = "463498667.899818"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExpenseSplitter.ExpensesManagerTableViewController._fetchedResultsController.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSFetchedResultsController&gt;"
+                  moduleName = "ExpenseSplitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManagerTableViewController.swift"
+                  timestampString = "463498667.900079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExpenseSplitter.ExpensesManagerTableViewController.init (ExpenseSplitter.ExpensesManagerTableViewController.Type)(style : C.UITableViewStyle) -&gt; ExpenseSplitter.ExpensesManagerTableViewController"
+                  moduleName = "ExpenseSplitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManagerTableViewController.swift"
+                  timestampString = "463498667.900332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "75">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExpenseSplitter.ExpensesManagerTableViewController.init (ExpenseSplitter.ExpensesManagerTableViewController.Type)(nibName : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, bundle : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSBundle&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;ExpenseSplitter.ExpensesManagerTableViewController&gt;"
+                  moduleName = "ExpenseSplitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManagerTableViewController.swift"
+                  timestampString = "463498667.900575"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExpenseSplitter.ExpensesManagerTableViewController.init (ExpenseSplitter.ExpensesManagerTableViewController.Type)(coder : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSCoder&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;ExpenseSplitter.ExpensesManagerTableViewController&gt;"
+                  moduleName = "ExpenseSplitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManagerTableViewController.swift"
+                  timestampString = "463498667.900823"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExpenseSplitter/ExpensesManagerTableViewController.swift"
+            timestampString = "463502570.064777"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "ExpensesManagerTableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExpenseSplitter/ExpensesManagerTableViewController.swift"
+            timestampString = "463498934.360227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExpenseSplitter/CreateExpensesManagerViewController.swift"
+            timestampString = "463503777.150617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "addUser(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExpenseSplitter/ExpensesManagerTableViewController.swift"
+            timestampString = "463503091.033825"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "createExpensesManagerViewControllerDidCancel(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExpenseSplitter/ExpensesManagerTableViewController.swift"
+            timestampString = "463503091.033825"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "createExpensesManagerViewControllerDidSave()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

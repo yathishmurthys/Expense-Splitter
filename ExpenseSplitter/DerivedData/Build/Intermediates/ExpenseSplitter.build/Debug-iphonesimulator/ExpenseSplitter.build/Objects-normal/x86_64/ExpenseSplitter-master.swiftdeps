@@ -1,0 +1,8 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "901919802f9c47b8c3f00f8378fc94a1"
+inputs: 
+- "/Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/Expense.swift"
+- "/Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/AppDelegate.swift"
+- "/Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/CreateExpensesManagerViewController.swift"
+- "/Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManagerTableViewController.swift"
+- "/Users/user/GIT/New/ExpenseSplitter/ExpenseSplitter/ExpensesManager.swift"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Expense" representedClassName="Expense" syncable="YES">
+        <attribute name="allUsers" attributeType="Transformable" syncable="YES"/>
+        <attribute name="amount" attributeType="Float" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="expensor" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSelected" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usersShare" attributeType="Transformable" syncable="YES"/>
+        <relationship name="expenseManager" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpensesManager" inverseName="expenses" inverseEntity="ExpensesManager" syncable="YES"/>
+    </entity>
+    <entity name="ExpensesManager" representedClassName="ExpensesManager" syncable="YES">
+        <attribute name="creationDate" attributeType="Date" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="users" attributeType="Transformable" syncable="YES"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="expenseManager" inverseEntity="Expense" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Expense" positionX="18" positionY="63" width="128" height="210"/>
+        <element name="ExpensesManager" positionX="-324" positionY="-36" width="128" height="103"/>
+    </elements>
+</model>
