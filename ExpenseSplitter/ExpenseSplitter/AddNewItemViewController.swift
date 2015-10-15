@@ -46,7 +46,7 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
         expenseItemTableView.tableFooterView = UIView()
         
         textField.delegate = self
-        textField.text = self.chosenData
+        textField.placeholder = self.chosenData
         
         self.showHideViews()
         
@@ -58,7 +58,6 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
         
         self.returnValue = self.chosenData
 
-        textField.endOfDocument
     }
     
     override func didReceiveMemoryWarning() {
@@ -143,13 +142,6 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     // MARK: - Text Field Delegate
-    
-    // Set cursor position to end of the input always
-    func textFieldDidBeginEditing(textField: UITextField) {
-        let ending = textField.endOfDocument
-        
-        textField.selectedTextRange = textField.textRangeFromPosition(ending, toPosition: ending)
-    }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let str = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)

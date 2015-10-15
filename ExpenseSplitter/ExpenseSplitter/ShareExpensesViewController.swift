@@ -74,7 +74,7 @@ class ShareExpensesViewController: UIViewController, UITableViewDataSource {
         var font: UIFont
         
         if indexPath.section == 0 {
-            font = UIFont.systemFontOfSize(16.0, weight: 0.2)
+            font = UIFont.systemFontOfSize(13.0, weight: 0.2)
             
             cell.userLabel?.text = "User"
             cell.spentAmtLabel?.text = "Spent"

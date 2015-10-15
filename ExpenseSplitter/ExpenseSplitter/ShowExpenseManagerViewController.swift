@@ -48,8 +48,10 @@ class ShowExpenseManagerViewController: UIViewController, UITableViewDataSource,
     override func viewWillAppear(animated: Bool) {
         if self.currentExpenseManager!.expenses.count == 0 {
             expensesTableView.hidden = true
+            totalExpenseLabel.hidden = false
         } else {
             expensesTableView.hidden = false
+            totalExpenseLabel.hidden = true
         }
         
         var totalExpense : Float = 0.0
