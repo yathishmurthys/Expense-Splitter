@@ -21,6 +21,7 @@ class ShowExpenseManagerViewController: UIViewController, UITableViewDataSource,
     
     @IBOutlet weak var optionsSegementedControl: UISegmentedControl!
     @IBOutlet weak var expensesTableView: UITableView!
+    @IBOutlet weak var noExpensesLabel: UILabel!
     @IBOutlet weak var totalExpenseLabel: UILabel!
     
     override func viewDidLoad() {
@@ -48,10 +49,10 @@ class ShowExpenseManagerViewController: UIViewController, UITableViewDataSource,
     override func viewWillAppear(animated: Bool) {
         if self.currentExpenseManager!.expenses.count == 0 {
             expensesTableView.hidden = true
-            totalExpenseLabel.hidden = false
+            noExpensesLabel.hidden = false
         } else {
             expensesTableView.hidden = false
-            totalExpenseLabel.hidden = true
+            noExpensesLabel.hidden = true
         }
         
         var totalExpense : Float = 0.0

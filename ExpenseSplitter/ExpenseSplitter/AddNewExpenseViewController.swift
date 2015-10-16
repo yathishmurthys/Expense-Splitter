@@ -9,6 +9,24 @@
 import UIKit
 import CoreData
 
+let EXPENSOR_KEY                = "Expensor"
+
+let AMOUNT_KEY                  = "Amount"
+let AMOUNT_SELECTED_VALUE       = "0.00"
+let AMOUNT_VALUES               = ["0.00"]
+
+let DESCRIPTION_KEY             = "Description"
+let DESCRIPTION_SELECTED_VALUE  = "Description"
+let DESCRIPTION_VALUES          = ["Description"]
+
+let PAYMENT_MODE_KEY            = "Payment Mode"
+let PAYMENT_MODE_SELECTED_VALUE = "Cash"
+let PAYMENT_MODE_VALUES         = ["Cash", "Card"]
+
+let EXPENSE_TYPE_KEY            = "Expense Type"
+let EXPENSE_TYPE_SELECTED_VALUE = "Common"
+let EXPENSE_TYPE_VALUES         = ["Common", "Personal"]
+
 class AddNewExpenseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AddNewItemViewControllerDelegate {
 
     var managedObjectContect: NSManagedObjectContext? = nil
@@ -52,21 +70,21 @@ class AddNewExpenseViewController: UIViewController, UITableViewDataSource, UITa
         if !self.editMode {
             vcTitle.title = "Add New Expense"
             
-            self.section0ItemTuples = [("Expensor", self.allUsers[0], self.allUsers),
-                                        ("Amount", "0.00", ["0.00"]),
-                                        ("Description", "Description", ["Description"]),
-                                        ("Payment Mode", "Cash", ["Cash", "Card"]),
-                                        ("Expense Type", "Common", ["Common", "Personal"])]
+            self.section0ItemTuples = [(EXPENSOR_KEY, self.allUsers[0], self.allUsers),
+                                        (AMOUNT_KEY, AMOUNT_SELECTED_VALUE, AMOUNT_VALUES),
+                                        (DESCRIPTION_KEY, DESCRIPTION_SELECTED_VALUE, DESCRIPTION_VALUES),
+                                        (PAYMENT_MODE_KEY, PAYMENT_MODE_SELECTED_VALUE, PAYMENT_MODE_VALUES),
+                                        (EXPENSE_TYPE_KEY, EXPENSE_TYPE_SELECTED_VALUE, EXPENSE_TYPE_VALUES)]
             
 
         } else {
             vcTitle.title = "Edit Expense"
             
-            self.section0ItemTuples = [("Expensor", self.currentExpense!.expensor, self.allUsers),
-                                        ("Amount", numberFormatter.stringFromNumber(self.currentExpense!.amount), ["0.00"]),
-                                        ("Description", self.currentExpense!.info, ["Description"]),
-                                        ("Payment Mode", self.currentExpense!.mode, ["Cash", "Card"]),
-                                        ("Expense Type", self.currentExpense!.type, ["Common", "Personal"])]
+            self.section0ItemTuples = [(EXPENSOR_KEY, self.currentExpense!.expensor, self.allUsers),
+                                        (AMOUNT_KEY, numberFormatter.stringFromNumber(self.currentExpense!.amount), ["0.00"]),
+                                        (DESCRIPTION_KEY, self.currentExpense!.info, DESCRIPTION_VALUES),
+                                        (PAYMENT_MODE_KEY, self.currentExpense!.mode, PAYMENT_MODE_VALUES),
+                                        (EXPENSE_TYPE_KEY, self.currentExpense!.type, EXPENSE_TYPE_VALUES)]
             
             for var i = 0; i < self.currentExpense!.usersShare.count; i++ {
                 self.usersShare[i] = self.currentExpense!.usersShare[i]

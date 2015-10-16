@@ -37,7 +37,7 @@ class ExpensesManagerViewController: UIViewController, UITableViewDataSource, UI
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
+            self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
 
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()

@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import MessageUI
 
-class MenuTableViewController: UITableViewController {
+let TO_RECEIPIENT   = "yathishmurthy18@gnal.com"
+let MAIL_SUBJECT    = "Expense Splitter Feedback"
 
+class MenuTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
+
+    @IBOutlet weak var sendFeedback: UITableViewCell!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +34,7 @@ class MenuTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    /*
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
@@ -36,7 +43,7 @@ class MenuTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }   */
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -92,5 +99,42 @@ class MenuTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let cell = self.tableView.cellForRowAtIndexPath(indexPath)
+        
+        if cell == sendFeedback {
+            let mailComposeViewController = self.configuredMailComposeViewController()
+            
+            if MFMailComposeViewController.canSendMail() {
+                self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+//            } else {
+//                self.showSendMailErrorAlert()
+            }
+        }
+    }
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposeVC = MFMailComposeViewController()
+        mailComposeVC.mailComposeDelegate = self
+        
+        mailComposeVC.setToRecipients([TO_RECEIPIENT])
+        mailComposeVC.setSubject(MAIL_SUBJECT)
+        
+        return mailComposeVC
+    }
+    
+    func showSendMailErrorAlert() {
+        let alert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
 
+    // MARK: - MF Mail Compose View Controller Delegate
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

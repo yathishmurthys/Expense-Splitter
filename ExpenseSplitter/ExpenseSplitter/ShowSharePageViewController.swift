@@ -8,6 +8,10 @@
 
 import UIKit
 
+let INDIVIDUAL_EXP_VC   = "IndividualExpensesVC"
+let SHARE_EXP_VC        = "ShareExpensesVC"
+let PERSONAL_EXP_VC     = "PersonalExpensesVC"
+
 class ShowSharePageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     var currentExpenses: [Expense] = []
@@ -22,7 +26,7 @@ class ShowSharePageViewController: UIPageViewController, UIPageViewControllerDat
         pageController.currentPageIndicatorTintColor = UIColor.blueColor()
         pageController.backgroundColor = UIColor.whiteColor()
 
-        self.viewControllerIdentifiers = ["IndividualExpensesVC", "ShareExpensesVC", "PersonalExpensesVC"]
+        self.viewControllerIdentifiers = [INDIVIDUAL_EXP_VC, SHARE_EXP_VC, PERSONAL_EXP_VC]
 
         self.dataSource = self
         
@@ -55,21 +59,21 @@ class ShowSharePageViewController: UIPageViewController, UIPageViewControllerDat
         case 0:
 //            self.title = "Individual Expenses"
 
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("IndividualExpensesVC") as! IndividualExpensesViewController
+            let vc = self.storyboard?.instantiateViewControllerWithIdentifier(INDIVIDUAL_EXP_VC) as! IndividualExpensesViewController
             vc.currentExpenses = self.currentExpenses
             return vc
 
         case 1:
 //            self.title = "Share Expenses"
 
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ShareExpensesVC") as! ShareExpensesViewController
+            let vc = self.storyboard?.instantiateViewControllerWithIdentifier(SHARE_EXP_VC) as! ShareExpensesViewController
             vc.currentExpenes = self.currentExpenses
             return vc
             
         case 2:
 //            self.title = "Personal Expenses"
 
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("PersonalExpensesVC") as! PersonalExpensesViewController
+            let vc = self.storyboard?.instantiateViewControllerWithIdentifier(PERSONAL_EXP_VC) as! PersonalExpensesViewController
             vc.currentExpenes = self.currentExpenses
             return vc
             
