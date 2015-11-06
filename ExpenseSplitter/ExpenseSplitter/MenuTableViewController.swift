@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-let TO_RECEIPIENT   = "yathishmurthy18@gnal.com"
+let TO_RECEIPIENT   = "yathishmurthy18@gmail.com"
 let MAIL_SUBJECT    = "Expense Splitter Feedback"
 
 class MenuTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
