@@ -87,6 +87,7 @@ class AddNewItemViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     @IBAction func cancelButtonClicked(sender: AnyObject) {
+        textField.resignFirstResponder()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
